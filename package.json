@@ -23,6 +23,7 @@
     "html-webpack-pug-plugin": "^4.0.0",
     "pug": "^2.0.4",
     "pug-loader": "^2.4.0",
+    "sass": "^1.53.0",
     "sass-loader": "^13.0.2",
     "style-loader": "^3.3.1",
     "webpack": "^5.73.0",
@@ -32,7 +33,6 @@
   "dependencies": {
     "clean-webpack-plugin": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
-    "normalize.css": "^8.0.1",
-    "sass": "^1.53.0"
+    "normalize.css": "^8.0.1"
   }
 }

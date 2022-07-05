@@ -1,5 +1,17 @@
 header(class='header')
   .header__logo
     img(src="header_logo.svg", alt="logo")
-  .header__contacts
+  ul(class='header__contacts')
+    li(class="contacts__item")
+      .item__icon 
+        img(src="number_icon.svg", alt="number")
+      span(class='item__contact item__contact_number') +7 (495) 123-45-56
+    li(class="contacts__item")
+      .item__icon 
+        img(src="mail_icon.svg", alt="mail")
+      span(class='item__contact item__contact_mail') support@wshost.ru
+      span(class="item__footer") (поддержка 24/7)
   .header__user
+    button(class='user__btn') Купить хостинг
+    .user__icon
+      img(src="user_icon.svg", alt="user")
