@@ -14,6 +14,7 @@ const plugins = [
 ];
 
 module.exports = {
+  target: "web",
   entry: "./index.js",
   module: {
     rules: [
@@ -44,5 +45,7 @@ module.exports = {
       console.log(`Listening on port:, ${port}`);
     },
     open: true,
+    liveReload: true,
+    static: ["src"],
   },
 };
