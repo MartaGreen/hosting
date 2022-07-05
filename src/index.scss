@@ -1,1 +1,17 @@
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  src: url("../assets/fonts/SFProDisplay-Regular.ttf"),
+    url("../assets/fonts/SFProDisplay-Regular.woff");
+}
 
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: italic;
+  src: url("../assets/fonts/SFProDisplay-RegularItalic.ttf"),
+    url("../assets/fonts/SFProDisplay-RegularItalic.woff");
+}
+
+body {
+  font-family: "SF Pro Display";
+}

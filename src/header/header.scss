@@ -1,12 +1,13 @@
 .header {
-  height: 111px;
-  background: #262626;
-
-  padding: 0 9%;
+  height: 110px;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  background: #262626;
+
+  padding: 0 9%;
 
   .header__logo {
     margin-left: 10px;
@@ -14,23 +15,38 @@
 
   .header__contacts {
     margin: 0;
-    padding-left: 50px;
+    padding: 0;
 
     .contacts__item {
-      display: flex;
-      align-items: center;
+      position: relative;
+
+      min-width: 220px;
 
       color: white;
       list-style: none;
 
-      margin-bottom: 10px;
+      .item__inner {
+        display: flex;
+        align-items: center;
 
-      .item__icon {
-        margin-right: 10px;
+        margin-bottom: 10px;
+
+        .item__icon {
+          margin-right: 8px;
+        }
+
+        .item__contact {
+          margin-bottom: 6px;
+        }
       }
 
       .item__footer {
-        align-self: flex-end;
+        position: absolute;
+        top: 25px;
+        left: 65px;
+
+        font-size: 13px;
+        font-style: italic;
       }
     }
   }
@@ -46,14 +62,14 @@
       width: 74%;
 
       font-family: SF Pro Display;
-      font-size: 20px;
+      font-size: 22px;
       color: #ffffff;
 
       background: #67a8d2;
       border: none;
       outline: none;
 
-      padding: 10px 0;
+      padding: 9px 0;
       border-radius: 5px;
     }
 
