@@ -1,0 +1,42 @@
+.main-info {
+  background: linear-gradient(91.37deg, #5994ba 14.63%, #adcce0 99.01%);
+  color: #ffffff;
+
+  padding: 53px 50px;
+
+  .main-info__inner {
+    width: 88%;
+    margin: 0 auto;
+
+    .main-info__title {
+      max-width: 680px;
+
+      font-size: 72px;
+      font-weight: 500;
+
+      letter-spacing: 5.6px;
+      line-height: 73px;
+    }
+
+    .main-info__description {
+      margin-top: 37px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .description__block {
+        height: 71px;
+
+        margin: 0;
+        font-size: 20px;
+
+        .description__text {
+          &.description__text_title {
+            margin-bottom: 7px;
+          }
+        }
+      }
+    }
+  }
+}

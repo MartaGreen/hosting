@@ -3,6 +3,7 @@ import "normalize.css";
 
 import "./src/index.scss";
 import "./src/header/header.scss";
+import "./src/main-info/main-info.scss";
 
 // files
 import "./assets/images/header/header_logo.svg";
