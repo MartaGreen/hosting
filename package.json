@@ -19,6 +19,7 @@
   "homepage": "https://github.com/MartaGreen/hosting#readme",
   "devDependencies": {
     "css-loader": "^6.7.1",
+    "file-loader": "^6.2.0",
     "html-webpack-pug-plugin": "^4.0.0",
     "pug": "^2.0.4",
     "pug-loader": "^2.4.0",
