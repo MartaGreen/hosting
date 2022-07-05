@@ -15,3 +15,54 @@
 body {
   font-family: "SF Pro Display";
 }
+
+.navigation {
+  height: 60px;
+  background: #ffffff;
+
+  display: flex;
+  align-items: center;
+
+  .nav {
+    // width: 86.7%;
+    width: 1296px;
+    height: 20px;
+
+    display: grid;
+    grid-template-columns: 209px 182px 369px 171px 351px;
+
+    margin: 0 auto;
+
+    .nav__item {
+      text-transform: uppercase;
+      text-decoration: none;
+
+      color: #262626;
+      font-size: 20px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:not(:last-child) {
+        border-right: 1px solid #262626;
+      }
+
+      &.nav__item_hosting {
+        // width: 12.7%;
+      }
+      &.nav__item_vps {
+        // width: 1%;
+      }
+      &.nav__item_domain {
+        // width: 1%;
+      }
+      &.nav__item_ssl {
+        // width: 1%;
+      }
+      &.nav__item_provider {
+        // width: 1%;
+      }
+    }
+  }
+}
