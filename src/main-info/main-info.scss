@@ -1,8 +1,10 @@
 .main-info {
+  position: relative;
+
   background: linear-gradient(91.37deg, #5994ba 14.63%, #adcce0 99.01%);
   color: #ffffff;
 
-  padding: 53px 50px;
+  padding: 53px 50px 115px 50px;
 
   .main-info__inner {
     width: 88%;
@@ -38,5 +40,27 @@
         }
       }
     }
+  }
+
+  .main-info__price-offer {
+    position: absolute;
+    bottom: 62px;
+    left: -2%;
+
+    // width: 380px;
+    width: 28.4%;
+    height: 46px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    // padding: 0 10px;
+
+    background: rgba(27, 86, 124, 1);
+    box-shadow: 10px 10px 0 rgba(254, 133, 114, 1);
+
+    font-size: 24px;
+    padding-right: 30px;
   }
 }
