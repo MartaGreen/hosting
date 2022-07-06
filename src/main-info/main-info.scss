@@ -129,7 +129,7 @@
       .offer__price .offer__arrow {
         transform: rotate(160deg) rotateX(180deg);
         left: 65%;
-        top: 130px;
+        top: 135%;
       }
     }
   }
@@ -142,5 +142,11 @@
       line-height: 67px;
       letter-spacing: 1px;
     }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main-info .main-info__offer .offer__price .offer__arrow {
+    display: none;
   }
 }
