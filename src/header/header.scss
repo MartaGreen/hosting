@@ -1,5 +1,6 @@
 .header {
   height: 110px;
+  min-width: 320px;
 
   display: flex;
   align-items: center;
@@ -10,22 +11,30 @@
   padding: 0 9%;
 
   .header__logo {
-    margin-left: 10px;
+    width: 12.2%;
+    min-width: 85px;
+
+    margin: 0 10px;
+
+    img {
+      width: 100%;
+    }
   }
 
   .header__contacts {
     margin: 0;
     padding: 0;
+    margin-right: 56px;
 
     .contacts__item {
       position: relative;
-
-      min-width: 220px;
 
       color: white;
       list-style: none;
 
       .item__inner {
+        position: relative;
+
         display: flex;
         align-items: center;
 
@@ -33,6 +42,23 @@
 
         .item__icon {
           margin-right: 8px;
+
+          .item__contact_hidden {
+            position: absolute;
+            top: 80%;
+            right: 50%;
+
+            min-width: 100px;
+            text-align: center;
+
+            display: none;
+
+            background: #ffffff;
+            color: #000000;
+            font-size: 11px;
+            border-radius: 5px;
+            padding: 5px;
+          }
         }
 
         .item__contact {
@@ -53,6 +79,7 @@
 
   .header__user {
     width: 26.5%;
+    min-width: 250px;
 
     display: flex;
     align-items: center;
@@ -60,6 +87,7 @@
 
     .user__btn {
       width: 74%;
+      min-width: 180px;
 
       font-family: SF Pro Display;
       font-size: 22px;
@@ -83,6 +111,49 @@
 
       background: #67a8d2;
       border-radius: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    padding: 0;
+
+    .header__contacts {
+      .item__inner {
+        .item__contact {
+          display: none;
+        }
+
+        .item__icon {
+          &:hover .item__contact_hidden {
+            display: block;
+          }
+        }
+      }
+      .item__footer {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header {
+    .header__contacts {
+      margin: 0;
+    }
+
+    .header__user {
+      height: 80%;
+      min-width: 150px;
+
+      flex-direction: column-reverse;
+
+      .user__btn {
+        font-size: 13px;
+        min-width: 120px;
+      }
     }
   }
 }

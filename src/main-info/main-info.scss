@@ -111,29 +111,10 @@
   }
 }
 
-// @media screen and (max-width: 1000px) {
-//   .main-info {
-//     .main-info__btn {
-//       left: 50%;
-//       top: 630px;
-//     }
-//   }
-// }
-
 @media screen and (max-width: 735px) {
   .main-info {
     .main-info__offer {
       top: 470px;
-    }
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .main-info .main-info__inner {
-    .main-info__title {
-      font-size: 65px;
-      line-height: 67px;
-      letter-spacing: 1px;
     }
   }
 }
@@ -154,12 +135,12 @@
   }
 }
 
-// @media screen and (max-width: 400px) {
-//   .main-info .main-info__inner {
-//     .main-info__title {
-//       font-size: 35px;
-//       line-height: 50px;
-//     }
-//   }
-// }
-// transform: rotate(70deg) rotateX(180deg);
+@media screen and (max-width: 600px) {
+  .main-info .main-info__inner {
+    .main-info__title {
+      font-size: 65px;
+      line-height: 67px;
+      letter-spacing: 1px;
+    }
+  }
+}
