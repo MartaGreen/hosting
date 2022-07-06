@@ -42,7 +42,7 @@
     }
   }
 
-  .main-info__price-offer {
+  .main-info__offer-price {
     position: absolute;
     bottom: 62px;
     left: -2%;
@@ -62,5 +62,31 @@
 
     font-size: 24px;
     padding-right: 30px;
+
+    .offer-price__arrow {
+      position: absolute;
+      left: 87%;
+      top: 90%;
+    }
+  }
+
+  .main-info__btn {
+    position: absolute;
+    bottom: 64px;
+    left: 479px;
+
+    width: 232px;
+    height: 44px;
+
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #ffffff;
+
+    border: none;
+    outline: none;
+
+    background: #fa6232;
+    box-shadow: 0px 4px 4px rgba(46, 46, 46, 0.27);
+    border-radius: 5px;
   }
 }
