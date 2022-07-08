@@ -1,0 +1,27 @@
+mixin card({name, ssdPlace, staticContent, extraContent, pricePerMonth, discount, icon})
+  - var content = [...staticContent, ...extraContent];
+
+  .card
+    .card__header 
+      .header__icon
+        img(src=icon, alt=name)
+      .header__text= name
+    
+    .card__main
+      .main__content 
+        h3(class="content__item content__item_title")
+          =ssdPlace
+          | Gb места SSD
+        each item in content
+          .content__item= item
+
+      .main__price
+        .price__value(class="price__value_actual")
+          span(class="price__value_bold")= `${pricePerMonth} ₽`
+          span(class="price__value_normal") в месяц
+        .price__value(class="price__value_discount")
+          span(class="price__value_bold")= `${discount} ₽`
+          span(class="price__value_normal") в месяц 
+
+      button(class="main__btn") Купить хостинг
+  

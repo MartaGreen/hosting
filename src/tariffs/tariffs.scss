@@ -1,0 +1,43 @@
+.tariffs {
+  background-color: #e5e5e5;
+  padding: 94px 0;
+
+  .tariffs__inner {
+    width: 82.3%;
+
+    margin: 0 auto;
+    letter-spacing: 2px;
+
+    .tariffs__title {
+      text-align: center;
+      font-size: 48px;
+      line-height: 72px;
+    }
+
+    .tariffs__description {
+      width: 51%;
+
+      font-size: 20px;
+      line-height: 30px;
+
+      margin-top: 57px;
+
+      .description__content {
+        margin-bottom: 23px;
+        letter-spacing: 0.01px;
+
+        .description__content_bold {
+          font-weight: 600;
+        }
+      }
+    }
+
+    .tariffs__cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 280px);
+      grid-gap: 20px;
+
+      margin-top: 46px;
+    }
+  }
+}

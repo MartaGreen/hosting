@@ -9,10 +9,11 @@ html(lang="en")
     include ./header/header.pug
     .navigation
       nav(class="nav")
-        a(href="#" class='nav__item nav__item_hosting') хостинг
+        a(href="#hosting" class='nav__item nav__item_hosting') хостинг
         a(href="#" class='nav__item nav__item_vps') vps
         a(href="#" class='nav__item nav__item_domain') регистрация доменов
         a(href="#" class='nav__item nav__item__ssl') ssl
         a(href="#" class='nav__item nav__item_provider') хостинг-провайдер
           span(class="dropdown-icon")
     include ./main-info/main-info.pug
+    include ./tariffs/tariffs.pug

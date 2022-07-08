@@ -1,6 +1,7 @@
 @font-face {
   font-family: "SF Pro Display";
   font-style: normal;
+  font-weight: 400;
   src: url("../assets/fonts/SFProDisplay-Regular.ttf"),
     url("../assets/fonts/SFProDisplay-Regular.woff");
 }
@@ -8,12 +9,35 @@
 @font-face {
   font-family: "SF Pro Display";
   font-style: italic;
+  font-weight: 400;
   src: url("../assets/fonts/SFProDisplay-RegularItalic.ttf"),
     url("../assets/fonts/SFProDisplay-RegularItalic.woff");
 }
 
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../assets/fonts/SFProDisplay-Semibold.ttf"),
+    url("../assets/fonts/SFProDisplay-Semibold.woff");
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../assets/fonts/SFProDisplay-Bold.ttf"),
+    url("../assets/fonts/SFProDisplay-Bold.woff");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
 }
 
 h1,
@@ -24,6 +48,11 @@ h5,
 h6,
 p {
   margin: 0;
+}
+
+button {
+  border: none;
+  outline: none;
 }
 
 .navigation {

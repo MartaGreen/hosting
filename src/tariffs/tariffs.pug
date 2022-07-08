@@ -1,0 +1,36 @@
+-
+  let extraContent = ["Повышенная производительность", "Домен в подарок"];
+  let discount = 117;
+
+  var generateData = (name, ssdPlace, pricePerMonth, discount, icon, extraContent=[]) => {
+    var staticContent = ["PHP - 5.6, 7.0, 7.1, 7.2, 7.3, 7.4", "Поддержка любой CMS", "Бесплатные SSL сертификаты Let's Encrypt", "Защита от DDoS"]
+
+    console.log("test");
+
+    return {
+      name, ssdPlace, staticContent, extraContent, pricePerMonth, discount, icon
+    }
+  }
+
+  var tariffsData = [
+    generateData("Мини", 2, 99, discount, "mini.png"),
+    generateData("Старт", 7, 149, discount, "start.png", extraContent),
+    generateData("Стандарт", 30, 290, discount, "standart.png", extraContent),
+    generateData("Бизнес", 50, 470, discount, "bisnes.png", extraContent),
+  ]
+
+section(class="tariffs" id="hosting") 
+  .tariffs__inner
+    .tariffs__title Тарифы на хостинг
+    .tariffs__description 
+      p(class="description__content") 
+        span(class="description__content_normal") У нас оптимальные тарифы на классический виртуальный хостинг с безлимитными ресурсами на количество сайтов, баз данных и FTP. 
+      p(class="description__content") 
+        span(class="description__content_normal") Выбирайте наш лучший&nbsp;
+        b(class="description__content_bold") безлимитный&nbsp;
+        span(class="description__content_normal") хостинг в России!
+
+    .tariffs__cards
+      include ./card/card.pug
+      each cardData in tariffsData
+        +card(cardData)
