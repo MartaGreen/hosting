@@ -17,11 +17,11 @@ mixin card({name, ssdPlace, staticContent, extraContent, pricePerMonth, discount
 
       .main__price
         .price__value(class="price__value_actual")
-          span(class="price__value_bold")= `${pricePerMonth} ₽`
-          span(class="price__value_normal") в месяц
+          b(class="bold-text price__value_per-month" style="letter-spacing: 1.6px;")= `${pricePerMonth} ₽`
+          | в месяц
         .price__value(class="price__value_discount")
-          span(class="price__value_bold")= `${discount} ₽`
-          span(class="price__value_normal") в месяц 
+          span(class="price__value_per-month")= `${discount} ₽`
+          | в месяц 
 
       button(class="main__btn") Купить хостинг
   

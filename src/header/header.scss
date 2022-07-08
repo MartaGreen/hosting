@@ -86,19 +86,11 @@
     justify-content: space-between;
 
     .user__btn {
-      width: 74%;
       min-width: 180px;
 
-      font-family: SF Pro Display;
       font-size: 22px;
-      color: #ffffff;
-
       background: #67a8d2;
-      border: none;
-      outline: none;
-
-      padding: 9px 0;
-      border-radius: 5px;
+      padding: 9px 42px;
     }
 
     .user__icon {

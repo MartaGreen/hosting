@@ -2,6 +2,7 @@
 import "normalize.css";
 
 import "./src/index.scss";
+import "./src/static-styles.scss";
 import "./src/header/header.scss";
 import "./src/main-info/main-info.scss";
 import "./src/tariffs/tariffs.scss";

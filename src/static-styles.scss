@@ -1,0 +1,32 @@
+.block-title {
+  text-align: center;
+  font-size: 48px;
+  line-height: 72px;
+  font-weight: 400;
+}
+
+.block-description {
+  font-size: 20px;
+  line-height: 30px;
+
+  .block-description__p {
+    margin-bottom: 23px;
+    letter-spacing: 0.01px;
+  }
+}
+
+.bold-text {
+  font-weight: 600;
+  line-height: 30px;
+}
+
+button {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+}

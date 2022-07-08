@@ -21,14 +21,13 @@
 
 section(class="tariffs" id="hosting") 
   .tariffs__inner
-    .tariffs__title Тарифы на хостинг
-    .tariffs__description 
-      p(class="description__content") 
-        span(class="description__content_normal") У нас оптимальные тарифы на классический виртуальный хостинг с безлимитными ресурсами на количество сайтов, баз данных и FTP. 
-      p(class="description__content") 
-        span(class="description__content_normal") Выбирайте наш лучший&nbsp;
-        b(class="description__content_bold") безлимитный&nbsp;
-        span(class="description__content_normal") хостинг в России!
+    h2(class="block-title tariffs__title") Тарифы на хостинг
+    .tariffs__description(class="block-description")
+      p(class="block-description__p") У нас оптимальные тарифы на классический виртуальный хостинг с безлимитными ресурсами на количество сайтов, баз данных и FTP. 
+      p(class="block-description__p") 
+        | Выбирайте наш лучший&nbsp;
+        b(class="bold-text") безлимитный&nbsp;
+        | хостинг в России!
 
     .tariffs__cards
       include ./card/card.pug
